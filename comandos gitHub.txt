@@ -1,0 +1,28 @@
+GitHub
+----------------------------------------------------------------------
+*autentificacion
+con ssh
+->buscas la carpeta .shh
+->Generas un Git bash con el anti click
+->Generas una llave ssh con el codigo 
+ssh-keygen -t ed25519 -C "your_email@example.com"
+->ingresas un nombre para el documento donde se guardara la llave
+Ingresar: id_rsa
+->Verificas si el agente esta funcionando con el codigo:
+eval "$(ssh-agent -s)"
+>Agent pid 823 //Te deberia mostrar esa respuesta
+->Crear una hoja config
+touch ~/.ssh/config
+->Despues en esa hoja agregar:
+Host *
+  IgnoreUnknown AddKeysToAgent,UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+->Añadir el Identidad (id_rsa)
+ IdentityFile ~/.ssh/id_rsa
+>Identity added: /c/Users/karlo/.ssh/id_rsa (carlosmanuelibarra11@gmail.com) //Se te monstrara eso
+------------------------------------------------------------------
+->Despues ir al Settings de Github
+->click en SSH and GPG keys
+->Despues Generar Clave ssh

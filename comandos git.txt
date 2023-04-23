@@ -1,0 +1,39 @@
+git
+-> Sistema de control de versiones
+pwd -> lugar en donde yo me encuentro
+mkdir -> crear una carpeta
+---------------------------------------------------------
+Crear en tus globales, tu nombre y email
+1.- git config --global user.name "Carlos"
+2.- git config --global user.email "carlosmanuelibarra11@gmail"
+---------------------------------------------------------
+Se inicia con -> git init (en la carpeta donde vas hacer git), Se crea la rama master
+Renombrar de la rama master a main
+git branch - m main (Ahora rama principal)
+---------------------------------------------------------
+Añadir al stage
+git add <Nombre del archivo>
+git add . -> Si quieres añadir todos los archivos pendientes
+---------------------------------------------------------
+Despues de estar en el Stage, añadir el commit
+git commit - m "Nuevo"
+---------------------------------------------------------
+Regresar a lo que tenia anterior en la rama, la fotografia anterior
+git checkout <"nombre del fichero">
+---------------------------------------------------------
+Si quieres volver a la ultima fotografia
+git reset <"nombre del fichero">
+---------------------------------------------------------
+Si quieres tomar atajos 
+git config --global alias.<nombre del alias> "log --graph --decorate --oneline"
+---------------------------------------------------------
+Verificar que cambios hiciste a tu documento
+git diff <Nombre del documento>
+---------------------------------------------------------
+que se han agregado en orden
+git log 
+---------------------------------------------------------
+git checkout <Numero de la rama> <326be7132d225eafdc482a7c324ca15c87a958e5>
+
+
+

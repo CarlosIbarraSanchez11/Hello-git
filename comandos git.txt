@@ -34,6 +34,35 @@ que se han agregado en orden
 git log 
 ---------------------------------------------------------
 git checkout <Numero de la rama> <326be7132d225eafdc482a7c324ca15c87a958e5>
-
-
-
+---------------------------------------------------------
+git reset --hard <nro de commit hasta donde se va a borrar>
+---------------------------------------------------------
+si por error usaste el git reset --hard, se puede recuperar con los siguientes comandos(para ver nuestro
+historial de ramas ymovimientos)
+git reflog
+colocar de nuevo el:
+git reset --hard <nro de la ultimo commit a regresar>
+---------------------------------------------------------
+Definir puntos importantes en los commits
+git tag <Nombre de etiqueta por commits realizados hasta el momento>
+tmb se puede desplazar con checkou sin saber el numero del commit, solo con el nombre del tag
+git checkout tags/<Nombre de tag>
+---------------------------------------------------------
+git branch <nombre de la rama>
+Cambiarse a la rama
+git switch <nombre de la rama>
+---------------------------------------------------------
+cambios del main al login
+git merge <NOMBRE DE LA RAMA>
+---------------------------------------------------------
+Almacenamiento temporal sin hacer commit
+git stash
+Ver listado de git stash pendientes
+git stash list
+Traer todo lo que dejaste guardado en el git stash
+git stash pop
+Eliminar lo que tienes en tu stash
+git stash drop
+----------------------------------------------------------
+Eliminar ramas cuando ya llegan a produccion
+git branch -d <Nombre de la rama>

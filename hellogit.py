@@ -1,2 +1,2 @@
-print("New Hello GitHub with changes of othre project!")
+print("New Hello GitHub with changes of other project!")
 # print("¿Que tal el curso?")

@@ -26,3 +26,12 @@ Host *
 ->Despues ir al Settings de Github
 ->click en SSH and GPG keys
 ->Despues Generar Clave ssh
+------------------------------------------------------------------
+->git fetch
+Se descarga el historial sin los cambios
+->git pull
+Se descarga el historial con los cambios
+------------------------------------------------------------------
+->git push
+envia local al remoto (gitHub)
+

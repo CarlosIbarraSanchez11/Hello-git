@@ -34,4 +34,5 @@ Se descarga el historial con los cambios
 ------------------------------------------------------------------
 ->git push
 envia local al remoto (gitHub)
-
+------------------------------------------------------------------
+git cherry-pick y git rebase
